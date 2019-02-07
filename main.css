@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 8px;
+    display: block;
+}
+
+.add-doggo {
+    align-items: flex-start;
+    text-align: center;
+    box-sizing: border-box;
+    display: inline-block;
+}
