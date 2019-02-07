@@ -1,16 +1,78 @@
 * {
     box-sizing: border-box;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-size: 18px;
+    word-spacing: 0.8px;
 }
 
 body {
     padding: 0;
-    margin: 8px;
-    display: block;
+    margin: 0;
+    background: grey;
 }
 
-.add-doggo {
-    align-items: flex-start;
+header {
+    background: white;
+    margin-inside: 50px;
+}
+
+.title {
     text-align: center;
-    box-sizing: border-box;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 60px;
+    letter-spacing: 4.8px;
+    font-weight: 400;
+}
+
+.add-doggo,
+.reset,
+.random-breed,
+.drop-down{
     display: inline-block;
+    text-align: center;
+    cursor: pointer;
+
+    /* create a small space when buttons wrap on 2 lines */
+    margin: 5px 0;
+
+    /* invisible border (will be colored on hover/focus) */
+    border: solid 1px transparent;
+    border-radius: 10px;
+
+    /* size comes from text & padding (no width/height) */
+    padding: 0.5em 1em;
+
+    color: #ffffff;
+    background-color: #FFAC33;
+}
+
+.add-doggo:active,
+.reset:active,
+.random-breed:active {
+    transform: translateY(1px);
+    filter: saturate(150%);
+}
+
+.add-doggo:hover,
+.reset:hover,
+.random-breed:hover {
+    color: #FFAC33;
+    border-color: currentColor;
+    background-color: white;
+}
+
+
+.doggos {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+img {
+    max-width: 90%;
+    margin: 5px;
+}
+
+#breed-select{
+    cursor: pointer;
 }
