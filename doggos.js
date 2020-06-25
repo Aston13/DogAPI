@@ -2,7 +2,7 @@ const doggos = document.querySelector(".doggos"); // div where images will be pl
 
 function addNewDog() {
     let s = document.getElementById("breed-select"); // dropdown box
-    let breed = s.options[s.selectedIndex].value;    // option from dropdown
+    let breed = (s.options[s.selectedIndex].value).split("-", 1);    // option from dropdown
     const img = document.createElement("img");
     let promise = fetch("https://dog.ceo/api/breed/" + breed + "/images/random");
 
