@@ -5,7 +5,7 @@ and display them on the webpage. Breeds can also be filtered so that only specif
 
 ## Deployment
 
-Any text editor/IDE that supports the languages used.
+Open the html file in any internet browser that supports it.
 
 ## Built With
 
